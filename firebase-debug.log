@@ -1,0 +1,89 @@
+[debug] [2024-08-29T03:25:32.205Z] ----------------------------------------------------------------------
+[debug] [2024-08-29T03:25:32.209Z] Command:       /nix/store/aspnwxp3q1wvg8jd1zg0295zmhr3lkb3-nodejs-18.19.1/bin/node /nix/store/pf4ama10fsjb161xrxgsyqi21qm10wc6-firebase-tools-13.13.1/lib/node_modules/firebase-tools/lib/bin/firebase.js init hosting
+[debug] [2024-08-29T03:25:32.210Z] CLI Version:   13.13.1
+[debug] [2024-08-29T03:25:32.210Z] Platform:      linux
+[debug] [2024-08-29T03:25:32.210Z] Node Version:  v18.19.1
+[debug] [2024-08-29T03:25:32.211Z] Time:          Thu Aug 29 2024 03:25:32 GMT+0000 (Coordinated Universal Time)
+[debug] [2024-08-29T03:25:32.211Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-29T03:25:32.221Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-29T03:25:32.221Z] > authorizing via signed-in user (pradiktabagus@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/user/bancaan
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-08-29T03:25:47.179Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-08-29T03:25:47.194Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"bancaan","name":"bancaan"}
+[debug] [2024-08-29T03:25:48.492Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2024-08-29T03:25:48.492Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.6894506527976836510"}
+[debug] [2024-08-29T03:25:48.494Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6894506527976836510 [none]
+[debug] [2024-08-29T03:25:49.557Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6894506527976836510 200
+[debug] [2024-08-29T03:25:49.568Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6894506527976836510 {"name":"operations/cp.6894506527976836510"}
+[debug] [2024-08-29T03:25:50.070Z] [Project Creation Poller] Retrying task index 0
+[debug] [2024-08-29T03:25:50.071Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6894506527976836510 [none]
+[debug] [2024-08-29T03:25:51.124Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6894506527976836510 200
+[debug] [2024-08-29T03:25:51.124Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6894506527976836510 {"name":"operations/cp.6894506527976836510","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true}}
+[debug] [2024-08-29T03:25:52.125Z] [Project Creation Poller] Retrying task index 0
+[debug] [2024-08-29T03:25:52.126Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6894506527976836510 [none]
+[debug] [2024-08-29T03:25:53.216Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6894506527976836510 200
+[debug] [2024-08-29T03:25:53.216Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6894506527976836510 {"name":"operations/cp.6894506527976836510","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"365697908222","projectId":"bancaan","lifecycleState":"ACTIVE","name":"bancaan","createTime":"2024-08-29T03:25:49.745985Z"}}
+[debug] [2024-08-29T03:25:53.218Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/bancaan:addFirebase [none]
+[debug] [2024-08-29T03:25:56.772Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/bancaan:addFirebase 200
+[debug] [2024-08-29T03:25:56.772Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/bancaan:addFirebase {"name":"operations/workflows/ZmI1MGE1MTgtZDMyYy00NmM2LWE1YTktYTZiM2VkNDg3ODg5"}
+[debug] [2024-08-29T03:25:56.773Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZmI1MGE1MTgtZDMyYy00NmM2LWE1YTktYTZiM2VkNDg3ODg5 [none]
+[debug] [2024-08-29T03:26:00.614Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZmI1MGE1MTgtZDMyYy00NmM2LWE1YTktYTZiM2VkNDg3ODg5 200
+[debug] [2024-08-29T03:26:00.623Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZmI1MGE1MTgtZDMyYy00NmM2LWE1YTktYTZiM2VkNDg3ODg5 {"name":"operations/workflows/ZmI1MGE1MTgtZDMyYy00NmM2LWE1YTktYTZiM2VkNDg3ODg5"}
+[debug] [2024-08-29T03:26:01.124Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-08-29T03:26:01.125Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZmI1MGE1MTgtZDMyYy00NmM2LWE1YTktYTZiM2VkNDg3ODg5 [none]
+[debug] [2024-08-29T03:26:01.888Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZmI1MGE1MTgtZDMyYy00NmM2LWE1YTktYTZiM2VkNDg3ODg5 200
+[debug] [2024-08-29T03:26:01.900Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZmI1MGE1MTgtZDMyYy00NmM2LWE1YTktYTZiM2VkNDg3ODg5 {"name":"operations/workflows/ZmI1MGE1MTgtZDMyYy00NmM2LWE1YTktYTZiM2VkNDg3ODg5"}
+[debug] [2024-08-29T03:26:02.902Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-08-29T03:26:02.902Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZmI1MGE1MTgtZDMyYy00NmM2LWE1YTktYTZiM2VkNDg3ODg5 [none]
+[debug] [2024-08-29T03:26:03.385Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZmI1MGE1MTgtZDMyYy00NmM2LWE1YTktYTZiM2VkNDg3ODg5 200
+[debug] [2024-08-29T03:26:03.398Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZmI1MGE1MTgtZDMyYy00NmM2LWE1YTktYTZiM2VkNDg3ODg5 {"name":"operations/workflows/ZmI1MGE1MTgtZDMyYy00NmM2LWE1YTktYTZiM2VkNDg3ODg5"}
+[debug] [2024-08-29T03:26:05.399Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-08-29T03:26:05.400Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZmI1MGE1MTgtZDMyYy00NmM2LWE1YTktYTZiM2VkNDg3ODg5 [none]
+[debug] [2024-08-29T03:26:05.675Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZmI1MGE1MTgtZDMyYy00NmM2LWE1YTktYTZiM2VkNDg3ODg5 200
+[debug] [2024-08-29T03:26:05.684Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZmI1MGE1MTgtZDMyYy00NmM2LWE1YTktYTZiM2VkNDg3ODg5 {"name":"operations/workflows/ZmI1MGE1MTgtZDMyYy00NmM2LWE1YTktYTZiM2VkNDg3ODg5"}
+[debug] [2024-08-29T03:26:09.689Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-08-29T03:26:09.690Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZmI1MGE1MTgtZDMyYy00NmM2LWE1YTktYTZiM2VkNDg3ODg5 [none]
+[debug] [2024-08-29T03:26:10.383Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZmI1MGE1MTgtZDMyYy00NmM2LWE1YTktYTZiM2VkNDg3ODg5 200
+[debug] [2024-08-29T03:26:10.397Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZmI1MGE1MTgtZDMyYy00NmM2LWE1YTktYTZiM2VkNDg3ODg5 {"name":"operations/workflows/ZmI1MGE1MTgtZDMyYy00NmM2LWE1YTktYTZiM2VkNDg3ODg5","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"bancaan","projectNumber":"365697908222","displayName":"bancaan","name":"projects/bancaan","resources":{"hostingSite":"bancaan"}}}
+[info] 
+[info] 🎉🎉🎉 Your Firebase project is ready! 🎉🎉🎉
+[info] 
+[info] Project information:
+[info]    - Project ID: bancaan
+[info]    - Project Name: bancaan
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/bancaan/overview
+[info] i  Using project bancaan (bancaan) 
+[info] 
+=== Hosting Setup
+[debug] [2024-08-29T03:26:10.413Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bancaan [none]
+[debug] [2024-08-29T03:26:11.466Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bancaan 200
+[debug] [2024-08-29T03:26:11.466Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bancaan {"projectId":"bancaan","projectNumber":"365697908222","displayName":"bancaan","name":"projects/bancaan","resources":{"hostingSite":"bancaan"},"state":"ACTIVE","etag":"1_fe10fd68-62fc-4a03-9b35-dc7e288372f0"}
+[info] 
+[info] i  Didn't detect a .git folder. Assuming /home/user/bancaan is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=788651159&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
