@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import ThemeComponent from "@/theme";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="relative flex items-center justify-center p-2">
+          <div className="border-solid border-2 border-slate-500 rounded-md mt-12 shadow-xl flex justify-center w-full min-w-[380px] max-w-[480px] min-h-[760px] ">
+            <div className="w-full relative">
+              app layout
+              {children}
+            </div>
+          </div>
+        </div>
+      </body>
     </html>
   );
 }
